@@ -33,7 +33,7 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16], TileScale.Sixteen);
             case "level1":
-            case "level1":return tiles.createTilemap(hex`0a0008000000000000000000000000000000000000000000000000000000000000000101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`, img`
+            case "level1":return tiles.createTilemap(hex`0a0008000000000000000000000200000000000000000000000000000000000000000101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`, img`
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -42,7 +42,7 @@ namespace myTiles {
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-`, [myTiles.transparency16,sprites.castle.tileGrass1], TileScale.Sixteen);
+`, [myTiles.transparency16,sprites.castle.tileGrass1,sprites.dungeon.collectibleRedCrystal], TileScale.Sixteen);
         }
         return null;
     })

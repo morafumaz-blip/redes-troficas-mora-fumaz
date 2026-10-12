@@ -48,7 +48,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let conejo: Sprite = null
 scene.setBackgroundColor(9)
 tiles.setCurrentTilemap(tilemap`level1`)
-effects.clouds.startScreenEffect(1000)
+effects.clouds.startScreenEffect()
 let zorro = sprites.create(img`
     bbbb........bbbb.................
     c44bb......bb44b.................
@@ -113,3 +113,4 @@ conejo.setPosition(14, 110)
 conejo.ay = 50
 conejo.ax = 30
 conejo.setBounceOnWall(true)
+music.play(music.stringPlayable("C5 A G A G A E G ", 120), music.PlaybackMode.LoopingInBackground)
